@@ -1,0 +1,94 @@
+{
+  "topic_order": [
+    "Quantum Computing",
+    "Complexity Theory",
+    "Physics Foundations",
+    "AI & Intelligence",
+    "Civilization & Existential Risk",
+    "Science Policy & Institutions",
+    "Politics & Society",
+    "Philosophy & Metaphysics",
+    "Personal / Community / Meta"
+  ],
+  "category_to_topics": {
+    "Quantum": ["Quantum Computing", "Physics Foundations"],
+    "Complexity": ["Complexity Theory", "Quantum Computing"],
+    "The Fate of Humanity": ["Civilization & Existential Risk"],
+    "Metaphysical Spouting": ["Philosophy & Metaphysics", "Physics Foundations"],
+    "Adventures in Meatspace": ["Personal / Community / Meta"],
+    "Announcements": ["Personal / Community / Meta"],
+    "Nerd Interest": ["Personal / Community / Meta", "Science Policy & Institutions"],
+    "Rage Against Doofosity": ["Politics & Society", "Science Policy & Institutions"],
+    "Obviously I'm Not Defending Aaronson": ["Politics & Society", "Personal / Community / Meta"],
+    "Procrastination": ["Personal / Community / Meta"],
+    "Embarrassing Myself": ["Personal / Community / Meta"],
+    "Self-Referential": ["Personal / Community / Meta"],
+    "Speaking Truth to Parallelism": ["Science Policy & Institutions", "Complexity Theory"],
+    "Nerd Self-Help": ["Science Policy & Institutions", "Personal / Community / Meta"],
+    "Bell's Theorem? But a Flesh Wound!": ["Physics Foundations"],
+    "CS/Physics Deathmatch": ["Physics Foundations", "Complexity Theory"],
+    "Quantum Computing Since Democritus": ["Quantum Computing", "Philosophy & Metaphysics"],
+    "Ask Me Anything": ["Personal / Community / Meta"],
+    "Mahmoud": ["Personal / Community / Meta"],
+    "Uncategorized": []
+  },
+  "keyword_rules": {
+    "Quantum Computing": [
+      "quantum computing", "quantum computer", "quantum supremacy", "quantum advantage", "fault-tolerant",
+      "bosonsampling", "sycamore", "qubits", "shor", "fourier transform", "postquantum", "quantum algorithm"
+    ],
+    "Complexity Theory": [
+      "complexity theory", "p vs np", "circuit lower bound", "hardness", "sampling complexity", "oracle", "proof complexity",
+      "communication complexity", "interactive proof", "computational complexity", "query complexity"
+    ],
+    "Physics Foundations": [
+      "bell", "superdeterminism", "many worlds", "simulation hypothesis", "quantum mechanics", "measurement problem",
+      "cosmology", "reality", "wormhole", "fermion", "universe", "anthropic"
+    ],
+    "AI & Intelligence": [
+      "ai", "artificial intelligence", "agi", "gpt", "llm", "language model", "superintelligence", "alignment",
+      "consciousness", "human specialness", "robot", "machine learning"
+    ],
+    "Civilization & Existential Risk": [
+      "pandemic", "covid", "biosecurity", "existential", "humanity", "civilization", "nuclear", "catastrophe",
+      "risk", "survival", "future of humanity", "apocalypse"
+    ],
+    "Science Policy & Institutions": [
+      "funding", "grant", "nsf", "nih", "academy", "academic", "tenure", "peer review", "journal", "education",
+      "student", "faculty", "university", "research support"
+    ],
+    "Politics & Society": [
+      "trump", "biden", "election", "republican", "democrat", "israel", "gaza", "antisemitism", "free speech",
+      "cancel culture", "visa", "immigration", "culture war", "politics"
+    ],
+    "Philosophy & Metaphysics": [
+      "free will", "meaning", "morality", "ethics", "philosophy", "metaphysics", "reductionism", "personal identity",
+      "epistemology", "consciousness", "soul"
+    ],
+    "Personal / Community / Meta": [
+      "my talk", "my interview", "guest post", "podcast", "newsletter", "happy", "birthday", "memorial", "remember",
+      "conference", "travel", "blog", "ama", "book review"
+    ]
+  },
+  "tone_rules": {
+    "explanatory": ["let me explain", "here's", "in this post", "the point is", "open problem"],
+    "argumentative": ["i claim", "i think", "i argue", "the case", "wrong", "mistake", "nonsense"],
+    "alarmed": ["catastrophe", "terrifying", "alarming", "dangerous", "urgent", "risk"],
+    "reflective": ["i wonder", "i've been thinking", "looking back", "it seems to me", "reflect"],
+    "celebratory": ["congratulations", "happy", "good news", "celebrate", "delighted"],
+    "elegiac": ["we've lost", "rest in peace", "memorial", "sad", "mourning", "tribute"],
+    "skeptical": ["skeptical", "i doubt", "i'm unconvinced", "not convinced", "question whether"]
+  },
+  "stance_targets": {
+    "useful quantum computing timeline": ["useful quantum computing", "quantum advantage", "fault-tolerant", "quantum computing"],
+    "AI existential risk": ["ai risk", "existential risk", "superintelligence", "alignment"],
+    "AGI feasibility": ["agi", "artificial general intelligence", "superintelligence"],
+    "simulation hypothesis": ["simulation hypothesis", "living in a simulation"],
+    "human specialness": ["human specialness", "humans", "consciousness"],
+    "US science funding": ["funding", "nsf", "nih", "science funding", "grant"],
+    "academic culture": ["academic", "tenure", "peer review", "faculty", "student"],
+    "political tribalism": ["tribalism", "culture war", "partisan", "republican", "democrat"],
+    "free speech / discourse norms": ["free speech", "cancel culture", "discourse", "comment section"],
+    "Israel / antisemitism / geopolitics": ["israel", "antisemitism", "gaza", "jewish"]
+  }
+}

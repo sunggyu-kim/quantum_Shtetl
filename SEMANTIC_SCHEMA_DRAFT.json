@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Scott Aaronson Idea Atlas Semantic Record",
+  "type": "object",
+  "required": [
+    "post_id",
+    "url",
+    "title",
+    "published_at",
+    "archive_month",
+    "primary_topics",
+    "summary_short",
+    "key_claims"
+  ],
+  "properties": {
+    "post_id": { "type": "integer" },
+    "url": { "type": "string" },
+    "title": { "type": "string" },
+    "published_at": { "type": ["string", "null"] },
+    "archive_month": { "type": "string", "pattern": "^[0-9]{6}$" },
+    "categories": { "type": "array", "items": { "type": "string" } },
+    "primary_topics": { "type": "array", "minItems": 1, "maxItems": 3, "items": { "type": "string" } },
+    "secondary_topics": { "type": "array", "items": { "type": "string" } },
+    "summary_short": { "type": "string" },
+    "summary_long": { "type": "string" },
+    "key_claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["claim", "confidence"],
+        "properties": {
+          "claim": { "type": "string" },
+          "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+          "evidence_quotes": { "type": "array", "items": { "type": "string" } },
+          "stance_target": { "type": ["string", "null"] },
+          "stance_polarity": { "type": ["string", "null"], "enum": ["support", "oppose", "skeptical", "conditional", null] }
+        }
+      }
+    },
+    "named_entities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "type"],
+        "properties": {
+          "name": { "type": "string" },
+          "type": { "type": "string", "enum": ["person", "organization", "technology", "country", "book", "paper", "concept", "event", "other"] },
+          "mentions": { "type": "integer" }
+        }
+      }
+    },
+    "tone": { "type": "array", "items": { "type": "string" } },
+    "temporal_mode": { "type": ["string", "null"], "enum": ["reactive", "evergreen", "retrospective", "forward_looking", null] },
+    "comment_count": { "type": ["integer", "null"] },
+    "source_text": { "type": "string" },
+    "evidence_quotes": { "type": "array", "items": { "type": "string" } },
+    "topic_scores": { "type": "object", "additionalProperties": { "type": "number" } },
+    "heuristic_baseline": {
+      "type": "object",
+      "properties": {
+        "summary_short": { "type": "string" },
+        "summary_long": { "type": "string" },
+        "key_claims": { "type": "array" },
+        "evidence_quotes": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": true
+    },
+    "refinement_meta": {
+      "type": "object",
+      "properties": {
+        "status": { "type": "string", "enum": ["heuristic", "llm_refined"] },
+        "source_label": { "type": "string" },
+        "schema_version": { "type": "string" },
+        "prompt_version": { "type": "string" },
+        "merged_at": { "type": "string" },
+        "editor_notes": { "type": "array", "items": { "type": "string" } },
+        "stance_summary": { "type": ["object", "null"] }
+      },
+      "additionalProperties": true
+    }
+  }
+}
