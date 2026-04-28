@@ -1,43 +1,87 @@
 # Scott Aaronson Idea Atlas
 
-Interactive knowledge product for Scott Aaronson's 2020-2026 blog corpus.
+A structured research dataset and lightweight web app for exploring Scott Aaronson's blog corpus from **2020 to 2026**.
+
+This repository turns the raw archive into a navigable idea map with:
+- **332 posts** across **74 archive months**
+- post-level summaries, claims, stance labels, and evidence quotes
+- month-level and year-level rollups
+- a small **Next.js** frontend for browsing timeline, topics, stances, and individual posts
+
+## What this repo contains
+
+### Core datasets
+- `data/posts_2020_2026.json` — raw crawled blog posts
+- `data/derived/enriched_posts.json` — heuristic enrichment pass
+- `data/derived/enriched_posts_refined.json` — full refined post dataset (**332 / 332 complete**)
+- `data/derived/month_summaries.json` — monthly synthesis
+- `data/derived/year_summaries.json` — yearly synthesis
+- `data/derived/refinement_outputs/all_refinements_current_332.jsonl` — consolidated refinement output log
+
+### Config and schemas
+- `config/taxonomy_rules.json` — topic taxonomy and keyword rules
+- `config/post_refinement_prompt_v1.md` — editorial prompt for post refinement
+- `config/refinement_schema_post_v1.json` — expected refinement schema
+- `SEMANTIC_SCHEMA_DRAFT.json` / `SUMMARY_SCHEMA_DRAFT.md` — schema drafts
+
+### Pipeline scripts
+- `crawl_scott_aaronson.py` — archive crawl
+- `scripts/enrich_posts.py` — heuristic enrichment
+- `scripts/build_summaries.py` — monthly/yearly summary generation
+- `scripts/validate_refinement_outputs.py` — refinement validator
+- `scripts/merge_refinement_results.py` — merge refined outputs into website-ready JSON
+
+### Web app
+- `web/` — Next.js app for browsing the corpus
 
 ## Current status
-- Raw crawl complete: **332 posts / 74 months / 0 failures**
-- Semantic pipeline bootstrap complete
-- Monthly summary bootstrap complete
-- Yearly summary bootstrap complete
 
-## Directory layout
-- `data/posts_2020_2026.json` - raw crawled posts
-- `data/derived/enriched_posts.json` - heuristic semantic enrichment
-- `data/derived/month_summaries.json` - monthly rollups
-- `data/derived/year_summaries.json` - yearly rollups
-- `config/taxonomy_rules.json` - executable taxonomy + keyword rules
-- `config/post_refinement_prompt_v1.md` - prompt template for LLM post refinement
-- `config/refinement_schema_post_v1.json` - expected JSON output for refined post fields
-- `scripts/enrich_posts.py` - post-level enrichment builder
-- `scripts/build_summaries.py` - month/year summary builder
-- `scripts/prepare_refinement_batches.py` - batch-prep for LLM refinement
-- `scripts/validate_refinement_outputs.py` - structural validator for LLM outputs
-- `scripts/merge_refinement_results.py` - merge refined post outputs back into derived JSON
-- `docs/LLM_REFINEMENT_PIPELINE.md` - end-to-end refinement workflow notes
-- `PLAN_2026-04-24.md` - product and execution plan
-- `SEMANTIC_SCHEMA_DRAFT.json` - target post schema
-- `SUMMARY_SCHEMA_DRAFT.md` - target summary schema
+- Raw crawl: **complete**
+- Heuristic enrichment: **complete**
+- Monthly summaries: **complete**
+- Yearly summaries: **complete**
+- LLM refinement: **complete for all 332 posts**
+- Public GitHub cleanup: **trimmed to final/relevant artifacts**
 
-## Commands
+## Why this project exists
+
+Scott Aaronson's blog is not just a sequence of posts; it is a long-running record of ideas about:
+- quantum computing
+- complexity theory
+- physics foundations
+- AI and existential risk
+- academic culture and public discourse
+- politics, civilization, and philosophical questions
+
+The goal of this project is to make that evolving intellectual landscape easier to inspect, summarize, and analyze.
+
+## Quick start
+
+### Data pipeline
 ```bash
 python3 crawl_scott_aaronson.py
 python3 scripts/enrich_posts.py
 python3 scripts/build_summaries.py
-python3 scripts/prepare_refinement_batches.py --months 202003,202004 --limit 10 --label march_april_sample
-python3 scripts/validate_refinement_outputs.py data/derived/refinement_outputs/sample_refinements.jsonl
-python3 scripts/merge_refinement_results.py data/derived/refinement_outputs/sample_refinements.jsonl --sample-only --output data/derived/refined_posts_sample.json
+python3 scripts/validate_refinement_outputs.py data/derived/refinement_outputs/all_refinements_current_332.jsonl
+python3 scripts/merge_refinement_results.py data/derived/refinement_outputs/all_refinements_current_332.jsonl --output data/derived/enriched_posts_refined.json
 ```
 
-## Recommended next phase
-1. tighten taxonomy rules and entity extraction
-2. add LLM batch enrichment for summary/claims/stance quality
-3. generate stronger month/year narratives
-4. scaffold Next.js frontend using derived JSON artifacts
+### Web app
+```bash
+cd web
+npm install
+npm run dev
+```
+
+Then open `http://localhost:3000`.
+
+## Front-page summary
+
+**Scott Aaronson Idea Atlas** is a cleaned, structured, and searchable map of Aaronson's 2020-2026 writing.
+It combines raw posts, semantic enrichment, full-post refinement, and web exploration into a single public research artifact.
+
+## Notes
+
+- This repo keeps the **final useful outputs** and removes most bulky intermediate batch artifacts.
+- The web app prefers `data/derived/enriched_posts_refined.json` when present.
+- The refinement layer is designed to be auditable: summaries and claims are backed by source quotes.
