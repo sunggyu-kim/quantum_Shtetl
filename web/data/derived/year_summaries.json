@@ -1,0 +1,1715 @@
+[
+  {
+    "year": "2020",
+    "post_count": 62,
+    "headline_themes": [
+      "Personal / Community / Meta",
+      "Civilization & Existential Risk",
+      "Quantum Computing",
+      "Politics & Society",
+      "Science Policy & Institutions"
+    ],
+    "topic_distribution": [
+      {
+        "name": "Personal / Community / Meta",
+        "count": 38
+      },
+      {
+        "name": "Civilization & Existential Risk",
+        "count": 32
+      },
+      {
+        "name": "Quantum Computing",
+        "count": 27
+      },
+      {
+        "name": "Politics & Society",
+        "count": 21
+      },
+      {
+        "name": "Science Policy & Institutions",
+        "count": 20
+      },
+      {
+        "name": "Physics Foundations",
+        "count": 18
+      },
+      {
+        "name": "Complexity Theory",
+        "count": 16
+      },
+      {
+        "name": "AI & Intelligence",
+        "count": 12
+      }
+    ],
+    "idea_evolution": [],
+    "major_stance_arcs": [
+      {
+        "name": "useful quantum computing timeline",
+        "count": 25
+      },
+      {
+        "name": "academic culture",
+        "count": 14
+      },
+      {
+        "name": "AGI feasibility",
+        "count": 9
+      },
+      {
+        "name": "political tribalism",
+        "count": 9
+      },
+      {
+        "name": "US science funding",
+        "count": 5
+      },
+      {
+        "name": "Israel / antisemitism / geopolitics",
+        "count": 3
+      }
+    ],
+    "important_entities": [
+      {
+        "name": "For",
+        "count": 18
+      },
+      {
+        "name": "Trump",
+        "count": 15
+      },
+      {
+        "name": "Update",
+        "count": 11
+      },
+      {
+        "name": "Austin",
+        "count": 8
+      },
+      {
+        "name": "Google",
+        "count": 8
+      },
+      {
+        "name": "You",
+        "count": 8
+      },
+      {
+        "name": "Follow",
+        "count": 6
+      },
+      {
+        "name": "Today",
+        "count": 6
+      },
+      {
+        "name": "Thanks",
+        "count": 5
+      },
+      {
+        "name": "Lily",
+        "count": 5
+      },
+      {
+        "name": "Biden",
+        "count": 5
+      },
+      {
+        "name": "Dana",
+        "count": 4
+      }
+    ],
+    "best_entry_points": [
+      {
+        "post_id": 4536,
+        "title": "From shtetl to Forum",
+        "url": "https://scottaaronson.blog/?p=4536",
+        "primary_topics": [
+          "Personal / Community / Meta",
+          "Science Policy & Institutions",
+          "Quantum Computing"
+        ]
+      },
+      {
+        "post_id": 4719,
+        "title": "When events make craziness sane",
+        "url": "https://scottaaronson.blog/?p=4719",
+        "primary_topics": [
+          "Civilization & Existential Risk",
+          "Politics & Society",
+          "Personal / Community / Meta"
+        ]
+      },
+      {
+        "post_id": 4786,
+        "title": "Announcements",
+        "url": "https://scottaaronson.blog/?p=4786",
+        "primary_topics": [
+          "Physics Foundations",
+          "Quantum Computing",
+          "Complexity Theory"
+        ]
+      },
+      {
+        "post_id": 4845,
+        "title": "Book Review: “Will He Go?”",
+        "url": "https://scottaaronson.blog/?p=4845",
+        "primary_topics": [
+          "Civilization & Existential Risk",
+          "Politics & Society",
+          "AI & Intelligence"
+        ]
+      },
+      {
+        "post_id": 4695,
+        "title": "On “armchair epidemiology”",
+        "url": "https://scottaaronson.blog/?p=4695",
+        "primary_topics": [
+          "Civilization & Existential Risk",
+          "AI & Intelligence",
+          "Politics & Society"
+        ]
+      }
+    ],
+    "active_months": [
+      {
+        "name": "202003",
+        "count": 8
+      },
+      {
+        "name": "202006",
+        "count": 8
+      },
+      {
+        "name": "202011",
+        "count": 8
+      },
+      {
+        "name": "202004",
+        "count": 7
+      },
+      {
+        "name": "202012",
+        "count": 7
+      },
+      {
+        "name": "202005",
+        "count": 5
+      },
+      {
+        "name": "202007",
+        "count": 4
+      },
+      {
+        "name": "202010",
+        "count": 4
+      },
+      {
+        "name": "202001",
+        "count": 3
+      },
+      {
+        "name": "202002",
+        "count": 3
+      },
+      {
+        "name": "202009",
+        "count": 3
+      },
+      {
+        "name": "202008",
+        "count": 2
+      }
+    ],
+    "tone_profile": [
+      {
+        "name": "argumentative",
+        "count": 28
+      },
+      {
+        "name": "explanatory",
+        "count": 21
+      },
+      {
+        "name": "celebratory",
+        "count": 19
+      },
+      {
+        "name": "alarmed",
+        "count": 19
+      },
+      {
+        "name": "elegiac",
+        "count": 18
+      },
+      {
+        "name": "reflective",
+        "count": 14
+      }
+    ],
+    "summary_narrative": "2020년은 Personal / Community / Meta, Civilization & Existential Risk, Quantum Computing를 중심으로 전개됐다. 총 62개 포스트가 있었고, 가장 자주 반복된 stance target은 useful quantum computing timeline였다."
+  },
+  {
+    "year": "2021",
+    "post_count": 53,
+    "headline_themes": [
+      "Personal / Community / Meta",
+      "Quantum Computing",
+      "Complexity Theory",
+      "Physics Foundations",
+      "Science Policy & Institutions"
+    ],
+    "topic_distribution": [
+      {
+        "name": "Personal / Community / Meta",
+        "count": 32
+      },
+      {
+        "name": "Quantum Computing",
+        "count": 31
+      },
+      {
+        "name": "Complexity Theory",
+        "count": 21
+      },
+      {
+        "name": "Physics Foundations",
+        "count": 19
+      },
+      {
+        "name": "Science Policy & Institutions",
+        "count": 17
+      },
+      {
+        "name": "Politics & Society",
+        "count": 13
+      },
+      {
+        "name": "Civilization & Existential Risk",
+        "count": 12
+      },
+      {
+        "name": "AI & Intelligence",
+        "count": 8
+      }
+    ],
+    "idea_evolution": [],
+    "major_stance_arcs": [
+      {
+        "name": "useful quantum computing timeline",
+        "count": 17
+      },
+      {
+        "name": "academic culture",
+        "count": 14
+      },
+      {
+        "name": "AGI feasibility",
+        "count": 5
+      },
+      {
+        "name": "political tribalism",
+        "count": 5
+      },
+      {
+        "name": "Israel / antisemitism / geopolitics",
+        "count": 3
+      },
+      {
+        "name": "US science funding",
+        "count": 2
+      }
+    ],
+    "important_entities": [
+      {
+        "name": "For",
+        "count": 9
+      },
+      {
+        "name": "Google",
+        "count": 7
+      },
+      {
+        "name": "Follow",
+        "count": 6
+      },
+      {
+        "name": "Austin",
+        "count": 6
+      },
+      {
+        "name": "See",
+        "count": 5
+      },
+      {
+        "name": "Last",
+        "count": 5
+      },
+      {
+        "name": "Shtetl",
+        "count": 5
+      },
+      {
+        "name": "Indeed",
+        "count": 4
+      },
+      {
+        "name": "Israel",
+        "count": 4
+      },
+      {
+        "name": "Scott Alexander",
+        "count": 4
+      },
+      {
+        "name": "Dana",
+        "count": 4
+      },
+      {
+        "name": "Many",
+        "count": 4
+      }
+    ],
+    "best_entry_points": [
+      {
+        "post_id": 6173,
+        "title": "My values, howled into the wind",
+        "url": "https://scottaaronson.blog/?p=6173",
+        "primary_topics": [
+          "Personal / Community / Meta",
+          "Politics & Society",
+          "Civilization & Existential Risk"
+        ]
+      },
+      {
+        "post_id": 5769,
+        "title": "Please cheer me up",
+        "url": "https://scottaaronson.blog/?p=5769",
+        "primary_topics": [
+          "Civilization & Existential Risk",
+          "Politics & Society",
+          "Science Policy & Institutions"
+        ]
+      },
+      {
+        "post_id": 5730,
+        "title": "Stephen Wiesner (1942-2021)",
+        "url": "https://scottaaronson.blog/?p=5730",
+        "primary_topics": [
+          "Personal / Community / Meta",
+          "Quantum Computing",
+          "Science Policy & Institutions"
+        ]
+      },
+      {
+        "post_id": 5868,
+        "title": "Gaussian BosonSampling, higher-order correlations, and spoofing: An update",
+        "url": "https://scottaaronson.blog/?p=5868",
+        "primary_topics": [
+          "Quantum Computing",
+          "Complexity Theory",
+          "Physics Foundations"
+        ]
+      },
+      {
+        "post_id": 5566,
+        "title": "Steven Weinberg (1933-2021): a personal view",
+        "url": "https://scottaaronson.blog/?p=5566",
+        "primary_topics": [
+          "Civilization & Existential Risk",
+          "Personal / Community / Meta",
+          "Physics Foundations"
+        ]
+      }
+    ],
+    "active_months": [
+      {
+        "name": "202101",
+        "count": 6
+      },
+      {
+        "name": "202103",
+        "count": 6
+      },
+      {
+        "name": "202104",
+        "count": 5
+      },
+      {
+        "name": "202108",
+        "count": 5
+      },
+      {
+        "name": "202109",
+        "count": 5
+      },
+      {
+        "name": "202102",
+        "count": 4
+      },
+      {
+        "name": "202105",
+        "count": 4
+      },
+      {
+        "name": "202106",
+        "count": 4
+      },
+      {
+        "name": "202107",
+        "count": 4
+      },
+      {
+        "name": "202110",
+        "count": 4
+      },
+      {
+        "name": "202111",
+        "count": 3
+      },
+      {
+        "name": "202112",
+        "count": 3
+      }
+    ],
+    "tone_profile": [
+      {
+        "name": "argumentative",
+        "count": 30
+      },
+      {
+        "name": "explanatory",
+        "count": 20
+      },
+      {
+        "name": "celebratory",
+        "count": 19
+      },
+      {
+        "name": "alarmed",
+        "count": 13
+      },
+      {
+        "name": "elegiac",
+        "count": 11
+      },
+      {
+        "name": "reflective",
+        "count": 6
+      }
+    ],
+    "summary_narrative": "2021년은 Personal / Community / Meta, Quantum Computing, Complexity Theory를 중심으로 전개됐다. 총 53개 포스트가 있었고, 가장 자주 반복된 stance target은 useful quantum computing timeline였다."
+  },
+  {
+    "year": "2022",
+    "post_count": 52,
+    "headline_themes": [
+      "Personal / Community / Meta",
+      "Quantum Computing",
+      "Civilization & Existential Risk",
+      "Physics Foundations",
+      "AI & Intelligence"
+    ],
+    "topic_distribution": [
+      {
+        "name": "Personal / Community / Meta",
+        "count": 34
+      },
+      {
+        "name": "Quantum Computing",
+        "count": 21
+      },
+      {
+        "name": "Civilization & Existential Risk",
+        "count": 21
+      },
+      {
+        "name": "Physics Foundations",
+        "count": 19
+      },
+      {
+        "name": "AI & Intelligence",
+        "count": 19
+      },
+      {
+        "name": "Science Policy & Institutions",
+        "count": 16
+      },
+      {
+        "name": "Complexity Theory",
+        "count": 12
+      },
+      {
+        "name": "Politics & Society",
+        "count": 8
+      }
+    ],
+    "idea_evolution": [],
+    "major_stance_arcs": [
+      {
+        "name": "useful quantum computing timeline",
+        "count": 18
+      },
+      {
+        "name": "academic culture",
+        "count": 9
+      },
+      {
+        "name": "AGI feasibility",
+        "count": 9
+      },
+      {
+        "name": "AI existential risk",
+        "count": 8
+      },
+      {
+        "name": "US science funding",
+        "count": 7
+      },
+      {
+        "name": "political tribalism",
+        "count": 3
+      }
+    ],
+    "important_entities": [
+      {
+        "name": "You",
+        "count": 9
+      },
+      {
+        "name": "For",
+        "count": 8
+      },
+      {
+        "name": "Austin",
+        "count": 7
+      },
+      {
+        "name": "Shtetl",
+        "count": 6
+      },
+      {
+        "name": "Optimized",
+        "count": 6
+      },
+      {
+        "name": "Follow",
+        "count": 4
+      },
+      {
+        "name": "Texas",
+        "count": 4
+      },
+      {
+        "name": "Internet",
+        "count": 4
+      },
+      {
+        "name": "Thanks",
+        "count": 4
+      },
+      {
+        "name": "Einstein",
+        "count": 3
+      },
+      {
+        "name": "Turing",
+        "count": 3
+      },
+      {
+        "name": "Jaan Tallinn",
+        "count": 3
+      }
+    ],
+    "best_entry_points": [
+      {
+        "post_id": 6685,
+        "title": "My Quantum Information Science II Lecture Notes: The wait is over!",
+        "url": "https://scottaaronson.blog/?p=6685",
+        "primary_topics": [
+          "Quantum Computing",
+          "Complexity Theory",
+          "Physics Foundations"
+        ]
+      },
+      {
+        "post_id": 6457,
+        "title": "Computer scientists crash the Solvay Conference",
+        "url": "https://scottaaronson.blog/?p=6457",
+        "primary_topics": [
+          "Quantum Computing",
+          "Complexity Theory",
+          "Physics Foundations"
+        ]
+      },
+      {
+        "post_id": 6541,
+        "title": "Einstein-Bohr debate settled once and for all",
+        "url": "https://scottaaronson.blog/?p=6541",
+        "primary_topics": [
+          "Physics Foundations",
+          "Quantum Computing",
+          "Philosophy & Metaphysics"
+        ]
+      },
+      {
+        "post_id": 6784,
+        "title": "Oh right, quantum computing",
+        "url": "https://scottaaronson.blog/?p=6784",
+        "primary_topics": [
+          "Quantum Computing",
+          "Complexity Theory",
+          "Physics Foundations"
+        ]
+      },
+      {
+        "post_id": 6534,
+        "title": "We Are the God of the Gaps (a little poem)",
+        "url": "https://scottaaronson.blog/?p=6534",
+        "primary_topics": [
+          "Personal / Community / Meta",
+          "Philosophy & Metaphysics",
+          "Civilization & Existential Risk"
+        ]
+      }
+    ],
+    "active_months": [
+      {
+        "name": "202207",
+        "count": 8
+      },
+      {
+        "name": "202211",
+        "count": 7
+      },
+      {
+        "name": "202201",
+        "count": 5
+      },
+      {
+        "name": "202206",
+        "count": 5
+      },
+      {
+        "name": "202208",
+        "count": 5
+      },
+      {
+        "name": "202210",
+        "count": 5
+      },
+      {
+        "name": "202202",
+        "count": 4
+      },
+      {
+        "name": "202204",
+        "count": 4
+      },
+      {
+        "name": "202209",
+        "count": 4
+      },
+      {
+        "name": "202212",
+        "count": 3
+      },
+      {
+        "name": "202205",
+        "count": 2
+      }
+    ],
+    "tone_profile": [
+      {
+        "name": "argumentative",
+        "count": 23
+      },
+      {
+        "name": "alarmed",
+        "count": 21
+      },
+      {
+        "name": "explanatory",
+        "count": 21
+      },
+      {
+        "name": "celebratory",
+        "count": 17
+      },
+      {
+        "name": "reflective",
+        "count": 11
+      },
+      {
+        "name": "elegiac",
+        "count": 10
+      }
+    ],
+    "summary_narrative": "2022년은 Personal / Community / Meta, Quantum Computing, Civilization & Existential Risk를 중심으로 전개됐다. 총 52개 포스트가 있었고, 가장 자주 반복된 stance target은 useful quantum computing timeline였다."
+  },
+  {
+    "year": "2023",
+    "post_count": 44,
+    "headline_themes": [
+      "Personal / Community / Meta",
+      "AI & Intelligence",
+      "Civilization & Existential Risk",
+      "Science Policy & Institutions",
+      "Quantum Computing"
+    ],
+    "topic_distribution": [
+      {
+        "name": "Personal / Community / Meta",
+        "count": 27
+      },
+      {
+        "name": "AI & Intelligence",
+        "count": 21
+      },
+      {
+        "name": "Civilization & Existential Risk",
+        "count": 21
+      },
+      {
+        "name": "Science Policy & Institutions",
+        "count": 17
+      },
+      {
+        "name": "Quantum Computing",
+        "count": 16
+      },
+      {
+        "name": "Politics & Society",
+        "count": 9
+      },
+      {
+        "name": "Physics Foundations",
+        "count": 9
+      },
+      {
+        "name": "Complexity Theory",
+        "count": 8
+      }
+    ],
+    "idea_evolution": [],
+    "major_stance_arcs": [
+      {
+        "name": "academic culture",
+        "count": 15
+      },
+      {
+        "name": "useful quantum computing timeline",
+        "count": 14
+      },
+      {
+        "name": "Israel / antisemitism / geopolitics",
+        "count": 13
+      },
+      {
+        "name": "AGI feasibility",
+        "count": 9
+      },
+      {
+        "name": "AI existential risk",
+        "count": 8
+      },
+      {
+        "name": "human specialness",
+        "count": 6
+      }
+    ],
+    "important_entities": [
+      {
+        "name": "For",
+        "count": 13
+      },
+      {
+        "name": "Austin",
+        "count": 11
+      },
+      {
+        "name": "Update",
+        "count": 10
+      },
+      {
+        "name": "Israel",
+        "count": 7
+      },
+      {
+        "name": "Yes",
+        "count": 6
+      },
+      {
+        "name": "Hamas",
+        "count": 6
+      },
+      {
+        "name": "Israeli",
+        "count": 5
+      },
+      {
+        "name": "You",
+        "count": 5
+      },
+      {
+        "name": "Google",
+        "count": 4
+      },
+      {
+        "name": "Anyway",
+        "count": 4
+      },
+      {
+        "name": "Why",
+        "count": 4
+      },
+      {
+        "name": "Not",
+        "count": 3
+      }
+    ],
+    "best_entry_points": [
+      {
+        "post_id": 7094,
+        "title": "The False Promise of Chomskyism",
+        "url": "https://scottaaronson.blog/?p=7094",
+        "primary_topics": [
+          "Physics Foundations",
+          "AI & Intelligence",
+          "Philosophy & Metaphysics"
+        ]
+      },
+      {
+        "post_id": 6990,
+        "title": "Movie Review: M3GAN",
+        "url": "https://scottaaronson.blog/?p=6990",
+        "primary_topics": [
+          "AI & Intelligence",
+          "Personal / Community / Meta",
+          "Civilization & Existential Risk"
+        ]
+      },
+      {
+        "post_id": 7672,
+        "title": "On being wrong about AI",
+        "url": "https://scottaaronson.blog/?p=7672",
+        "primary_topics": [
+          "Civilization & Existential Risk",
+          "Personal / Community / Meta",
+          "AI & Intelligence"
+        ]
+      },
+      {
+        "post_id": 7266,
+        "title": "Five Worlds of AI (a joint post with Boaz Barak)",
+        "url": "https://scottaaronson.blog/?p=7266",
+        "primary_topics": [
+          "Civilization & Existential Risk",
+          "AI & Intelligence",
+          "Physics Foundations"
+        ]
+      },
+      {
+        "post_id": 7425,
+        "title": "Because they could",
+        "url": "https://scottaaronson.blog/?p=7425",
+        "primary_topics": [
+          "Civilization & Existential Risk",
+          "Personal / Community / Meta",
+          "Science Policy & Institutions"
+        ]
+      }
+    ],
+    "active_months": [
+      {
+        "name": "202303",
+        "count": 7
+      },
+      {
+        "name": "202304",
+        "count": 5
+      },
+      {
+        "name": "202305",
+        "count": 5
+      },
+      {
+        "name": "202307",
+        "count": 5
+      },
+      {
+        "name": "202312",
+        "count": 5
+      },
+      {
+        "name": "202310",
+        "count": 4
+      },
+      {
+        "name": "202311",
+        "count": 4
+      },
+      {
+        "name": "202302",
+        "count": 3
+      },
+      {
+        "name": "202308",
+        "count": 3
+      },
+      {
+        "name": "202301",
+        "count": 2
+      },
+      {
+        "name": "202309",
+        "count": 1
+      }
+    ],
+    "tone_profile": [
+      {
+        "name": "argumentative",
+        "count": 23
+      },
+      {
+        "name": "celebratory",
+        "count": 15
+      },
+      {
+        "name": "elegiac",
+        "count": 13
+      },
+      {
+        "name": "alarmed",
+        "count": 12
+      },
+      {
+        "name": "explanatory",
+        "count": 12
+      },
+      {
+        "name": "reflective",
+        "count": 10
+      }
+    ],
+    "summary_narrative": "2023년은 Personal / Community / Meta, AI & Intelligence, Civilization & Existential Risk를 중심으로 전개됐다. 총 44개 포스트가 있었고, 가장 자주 반복된 stance target은 academic culture였다."
+  },
+  {
+    "year": "2024",
+    "post_count": 42,
+    "headline_themes": [
+      "Personal / Community / Meta",
+      "Civilization & Existential Risk",
+      "Quantum Computing",
+      "Physics Foundations",
+      "AI & Intelligence"
+    ],
+    "topic_distribution": [
+      {
+        "name": "Personal / Community / Meta",
+        "count": 25
+      },
+      {
+        "name": "Civilization & Existential Risk",
+        "count": 19
+      },
+      {
+        "name": "Quantum Computing",
+        "count": 17
+      },
+      {
+        "name": "Physics Foundations",
+        "count": 16
+      },
+      {
+        "name": "AI & Intelligence",
+        "count": 12
+      },
+      {
+        "name": "Politics & Society",
+        "count": 11
+      },
+      {
+        "name": "Science Policy & Institutions",
+        "count": 10
+      },
+      {
+        "name": "Complexity Theory",
+        "count": 9
+      }
+    ],
+    "idea_evolution": [],
+    "major_stance_arcs": [
+      {
+        "name": "useful quantum computing timeline",
+        "count": 21
+      },
+      {
+        "name": "Israel / antisemitism / geopolitics",
+        "count": 15
+      },
+      {
+        "name": "human specialness",
+        "count": 9
+      },
+      {
+        "name": "academic culture",
+        "count": 6
+      },
+      {
+        "name": "US science funding",
+        "count": 6
+      },
+      {
+        "name": "political tribalism",
+        "count": 6
+      }
+    ],
+    "important_entities": [
+      {
+        "name": "For",
+        "count": 13
+      },
+      {
+        "name": "Israel",
+        "count": 11
+      },
+      {
+        "name": "Anyway",
+        "count": 7
+      },
+      {
+        "name": "Jews",
+        "count": 7
+      },
+      {
+        "name": "You",
+        "count": 6
+      },
+      {
+        "name": "Update",
+        "count": 6
+      },
+      {
+        "name": "Jewish",
+        "count": 5
+      },
+      {
+        "name": "Google",
+        "count": 5
+      },
+      {
+        "name": "Now",
+        "count": 4
+      },
+      {
+        "name": "See",
+        "count": 4
+      },
+      {
+        "name": "Israeli",
+        "count": 4
+      },
+      {
+        "name": "Trump",
+        "count": 4
+      }
+    ],
+    "best_entry_points": [
+      {
+        "post_id": 8217,
+        "title": "My Reading Burden",
+        "url": "https://scottaaronson.blog/?p=8217",
+        "primary_topics": [
+          "Personal / Community / Meta",
+          "Civilization & Existential Risk",
+          "Science Policy & Institutions"
+        ]
+      },
+      {
+        "post_id": 8356,
+        "title": "The International Olympiad in Injustice",
+        "url": "https://scottaaronson.blog/?p=8356",
+        "primary_topics": [
+          "Politics & Society",
+          "Personal / Community / Meta",
+          "Civilization & Existential Risk"
+        ]
+      },
+      {
+        "post_id": 8234,
+        "title": "“The Right Side of History”",
+        "url": "https://scottaaronson.blog/?p=8234",
+        "primary_topics": [
+          "Civilization & Existential Risk",
+          "Physics Foundations",
+          "Philosophy & Metaphysics"
+        ]
+      },
+      {
+        "post_id": 8458,
+        "title": "Letter to a Jewish voter in Pennsylvania",
+        "url": "https://scottaaronson.blog/?p=8458",
+        "primary_topics": [
+          "Civilization & Existential Risk",
+          "Politics & Society",
+          "Science Policy & Institutions"
+        ]
+      },
+      {
+        "post_id": 7916,
+        "title": "And yet quantum computing continues to progress",
+        "url": "https://scottaaronson.blog/?p=7916",
+        "primary_topics": [
+          "Quantum Computing",
+          "Physics Foundations",
+          "AI & Intelligence"
+        ]
+      }
+    ],
+    "active_months": [
+      {
+        "name": "202409",
+        "count": 7
+      },
+      {
+        "name": "202407",
+        "count": 6
+      },
+      {
+        "name": "202410",
+        "count": 5
+      },
+      {
+        "name": "202404",
+        "count": 4
+      },
+      {
+        "name": "202403",
+        "count": 3
+      },
+      {
+        "name": "202405",
+        "count": 3
+      },
+      {
+        "name": "202406",
+        "count": 3
+      },
+      {
+        "name": "202408",
+        "count": 3
+      },
+      {
+        "name": "202411",
+        "count": 3
+      },
+      {
+        "name": "202402",
+        "count": 2
+      },
+      {
+        "name": "202412",
+        "count": 2
+      },
+      {
+        "name": "202401",
+        "count": 1
+      }
+    ],
+    "tone_profile": [
+      {
+        "name": "argumentative",
+        "count": 23
+      },
+      {
+        "name": "celebratory",
+        "count": 19
+      },
+      {
+        "name": "alarmed",
+        "count": 14
+      },
+      {
+        "name": "elegiac",
+        "count": 14
+      },
+      {
+        "name": "reflective",
+        "count": 13
+      },
+      {
+        "name": "explanatory",
+        "count": 9
+      }
+    ],
+    "summary_narrative": "2024년은 Personal / Community / Meta, Civilization & Existential Risk, Quantum Computing를 중심으로 전개됐다. 총 42개 포스트가 있었고, 가장 자주 반복된 stance target은 useful quantum computing timeline였다."
+  },
+  {
+    "year": "2025",
+    "post_count": 54,
+    "headline_themes": [
+      "Personal / Community / Meta",
+      "Quantum Computing",
+      "Science Policy & Institutions",
+      "Civilization & Existential Risk",
+      "Politics & Society"
+    ],
+    "topic_distribution": [
+      {
+        "name": "Personal / Community / Meta",
+        "count": 32
+      },
+      {
+        "name": "Quantum Computing",
+        "count": 25
+      },
+      {
+        "name": "Science Policy & Institutions",
+        "count": 24
+      },
+      {
+        "name": "Civilization & Existential Risk",
+        "count": 23
+      },
+      {
+        "name": "Politics & Society",
+        "count": 22
+      },
+      {
+        "name": "Physics Foundations",
+        "count": 15
+      },
+      {
+        "name": "Complexity Theory",
+        "count": 10
+      },
+      {
+        "name": "AI & Intelligence",
+        "count": 8
+      }
+    ],
+    "idea_evolution": [],
+    "major_stance_arcs": [
+      {
+        "name": "useful quantum computing timeline",
+        "count": 20
+      },
+      {
+        "name": "academic culture",
+        "count": 18
+      },
+      {
+        "name": "US science funding",
+        "count": 17
+      },
+      {
+        "name": "Israel / antisemitism / geopolitics",
+        "count": 16
+      },
+      {
+        "name": "AI existential risk",
+        "count": 8
+      },
+      {
+        "name": "AGI feasibility",
+        "count": 8
+      }
+    ],
+    "important_entities": [
+      {
+        "name": "Trump",
+        "count": 14
+      },
+      {
+        "name": "For",
+        "count": 14
+      },
+      {
+        "name": "Israel",
+        "count": 10
+      },
+      {
+        "name": "Austin",
+        "count": 10
+      },
+      {
+        "name": "American",
+        "count": 7
+      },
+      {
+        "name": "Google",
+        "count": 7
+      },
+      {
+        "name": "Jews",
+        "count": 6
+      },
+      {
+        "name": "Hamas",
+        "count": 5
+      },
+      {
+        "name": "You",
+        "count": 5
+      },
+      {
+        "name": "Quantinuum",
+        "count": 5
+      },
+      {
+        "name": "Jewish",
+        "count": 5
+      },
+      {
+        "name": "Shtetl",
+        "count": 4
+      }
+    ],
+    "best_entry_points": [
+      {
+        "post_id": 8820,
+        "title": "Fight Fiercely",
+        "url": "https://scottaaronson.blog/?p=8820",
+        "primary_topics": [
+          "Politics & Society",
+          "Science Policy & Institutions",
+          "Civilization & Existential Risk"
+        ]
+      },
+      {
+        "post_id": 9108,
+        "title": "Deep Gratitude",
+        "url": "https://scottaaronson.blog/?p=9108",
+        "primary_topics": [
+          "Politics & Society",
+          "Science Policy & Institutions",
+          "Personal / Community / Meta"
+        ]
+      },
+      {
+        "post_id": 8949,
+        "title": "Raymond Laflamme (1960-2025)",
+        "url": "https://scottaaronson.blog/?p=8949",
+        "primary_topics": [
+          "Quantum Computing",
+          "Personal / Community / Meta",
+          "Physics Foundations"
+        ]
+      },
+      {
+        "post_id": 9082,
+        "title": "Deep Zionism",
+        "url": "https://scottaaronson.blog/?p=9082",
+        "primary_topics": [
+          "Politics & Society",
+          "Civilization & Existential Risk",
+          "Personal / Community / Meta"
+        ]
+      },
+      {
+        "post_id": 9333,
+        "title": "Theory and AI Alignment",
+        "url": "https://scottaaronson.blog/?p=9333",
+        "primary_topics": [
+          "Personal / Community / Meta",
+          "AI & Intelligence",
+          "Quantum Computing"
+        ]
+      }
+    ],
+    "active_months": [
+      {
+        "name": "202502",
+        "count": 6
+      },
+      {
+        "name": "202504",
+        "count": 6
+      },
+      {
+        "name": "202509",
+        "count": 6
+      },
+      {
+        "name": "202501",
+        "count": 5
+      },
+      {
+        "name": "202503",
+        "count": 5
+      },
+      {
+        "name": "202511",
+        "count": 5
+      },
+      {
+        "name": "202512",
+        "count": 5
+      },
+      {
+        "name": "202506",
+        "count": 4
+      },
+      {
+        "name": "202508",
+        "count": 4
+      },
+      {
+        "name": "202510",
+        "count": 4
+      },
+      {
+        "name": "202505",
+        "count": 3
+      },
+      {
+        "name": "202507",
+        "count": 1
+      }
+    ],
+    "tone_profile": [
+      {
+        "name": "argumentative",
+        "count": 31
+      },
+      {
+        "name": "celebratory",
+        "count": 23
+      },
+      {
+        "name": "alarmed",
+        "count": 21
+      },
+      {
+        "name": "elegiac",
+        "count": 12
+      },
+      {
+        "name": "explanatory",
+        "count": 9
+      },
+      {
+        "name": "reflective",
+        "count": 8
+      }
+    ],
+    "summary_narrative": "2025년은 Personal / Community / Meta, Quantum Computing, Science Policy & Institutions를 중심으로 전개됐다. 총 54개 포스트가 있었고, 가장 자주 반복된 stance target은 useful quantum computing timeline였다."
+  },
+  {
+    "year": "2026",
+    "post_count": 25,
+    "headline_themes": [
+      "Personal / Community / Meta",
+      "Quantum Computing",
+      "Civilization & Existential Risk",
+      "Physics Foundations",
+      "Science Policy & Institutions"
+    ],
+    "topic_distribution": [
+      {
+        "name": "Personal / Community / Meta",
+        "count": 17
+      },
+      {
+        "name": "Quantum Computing",
+        "count": 13
+      },
+      {
+        "name": "Civilization & Existential Risk",
+        "count": 11
+      },
+      {
+        "name": "Physics Foundations",
+        "count": 10
+      },
+      {
+        "name": "Science Policy & Institutions",
+        "count": 7
+      },
+      {
+        "name": "AI & Intelligence",
+        "count": 6
+      },
+      {
+        "name": "Complexity Theory",
+        "count": 4
+      },
+      {
+        "name": "Politics & Society",
+        "count": 3
+      }
+    ],
+    "idea_evolution": [],
+    "major_stance_arcs": [
+      {
+        "name": "useful quantum computing timeline",
+        "count": 11
+      },
+      {
+        "name": "AGI feasibility",
+        "count": 4
+      },
+      {
+        "name": "academic culture",
+        "count": 4
+      },
+      {
+        "name": "US science funding",
+        "count": 3
+      },
+      {
+        "name": "AI existential risk",
+        "count": 1
+      }
+    ],
+    "important_entities": [
+      {
+        "name": "You",
+        "count": 5
+      },
+      {
+        "name": "Shtetl",
+        "count": 4
+      },
+      {
+        "name": "Optimized",
+        "count": 4
+      },
+      {
+        "name": "Trump",
+        "count": 4
+      },
+      {
+        "name": "Shor",
+        "count": 4
+      },
+      {
+        "name": "Venezuela",
+        "count": 3
+      },
+      {
+        "name": "Internet",
+        "count": 3
+      },
+      {
+        "name": "Iran",
+        "count": 2
+      },
+      {
+        "name": "Iranian",
+        "count": 2
+      },
+      {
+        "name": "People",
+        "count": 2
+      },
+      {
+        "name": "Western",
+        "count": 2
+      },
+      {
+        "name": "Tehran",
+        "count": 2
+      }
+    ],
+    "best_entry_points": [
+      {
+        "post_id": 9475,
+        "title": "The Goodness Cluster",
+        "url": "https://scottaaronson.blog/?p=9475",
+        "primary_topics": [
+          "Philosophy & Metaphysics",
+          "Civilization & Existential Risk",
+          "Physics Foundations"
+        ]
+      },
+      {
+        "post_id": 9453,
+        "title": "Venezuela through the lens of good and evil",
+        "url": "https://scottaaronson.blog/?p=9453",
+        "primary_topics": [
+          "Personal / Community / Meta",
+          "Civilization & Existential Risk",
+          "Politics & Society"
+        ]
+      },
+      {
+        "post_id": 9668,
+        "title": "Before we start on quantum",
+        "url": "https://scottaaronson.blog/?p=9668",
+        "primary_topics": [
+          "Quantum Computing",
+          "Science Policy & Institutions",
+          "Physics Foundations"
+        ]
+      },
+      {
+        "post_id": 9650,
+        "title": "My theoretical computer science notes from Epsilon Camp",
+        "url": "https://scottaaronson.blog/?p=9650",
+        "primary_topics": [
+          "Personal / Community / Meta",
+          "Quantum Computing",
+          "Complexity Theory"
+        ]
+      },
+      {
+        "post_id": 9656,
+        "title": "Movie Review: “The AI Doc”",
+        "url": "https://scottaaronson.blog/?p=9656",
+        "primary_topics": [
+          "Civilization & Existential Risk",
+          "Personal / Community / Meta",
+          "AI & Intelligence"
+        ]
+      }
+    ],
+    "active_months": [
+      {
+        "name": "202601",
+        "count": 8
+      },
+      {
+        "name": "202602",
+        "count": 7
+      },
+      {
+        "name": "202603",
+        "count": 7
+      },
+      {
+        "name": "202604",
+        "count": 3
+      }
+    ],
+    "tone_profile": [
+      {
+        "name": "explanatory",
+        "count": 10
+      },
+      {
+        "name": "celebratory",
+        "count": 9
+      },
+      {
+        "name": "argumentative",
+        "count": 8
+      },
+      {
+        "name": "alarmed",
+        "count": 6
+      },
+      {
+        "name": "elegiac",
+        "count": 4
+      },
+      {
+        "name": "reflective",
+        "count": 2
+      }
+    ],
+    "summary_narrative": "2026년은 Personal / Community / Meta, Quantum Computing, Civilization & Existential Risk를 중심으로 전개됐다. 총 25개 포스트가 있었고, 가장 자주 반복된 stance target은 useful quantum computing timeline였다."
+  }
+]

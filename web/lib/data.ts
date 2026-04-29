@@ -4,7 +4,10 @@ import path from 'node:path';
 import { cache } from 'react';
 import type { MonthSummary, Post, YearSummary } from '@/lib/types';
 
-const dataPath = (...parts: string[]) => path.join(process.cwd(), '..', 'data', ...parts);
+const bundledDataRoot = path.join(process.cwd(), 'data');
+const repoDataRoot = path.join(process.cwd(), '..', 'data');
+const dataRoot = existsSync(bundledDataRoot) ? bundledDataRoot : repoDataRoot;
+const dataPath = (...parts: string[]) => path.join(dataRoot, ...parts);
 
 const topicCategoryOrder = [
   'AI & Intelligence',
