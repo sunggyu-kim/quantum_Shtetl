@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { PostLink, SectionCard, TopicPill } from '@/components/Cards';
-import { formatDate, formatPolarity, getPostById, getPosts } from '@/lib/data';
+import { formatDate, formatPolarity, formatTopicName, getPostById, getPosts } from '@/lib/data';
 
 export async function generateStaticParams() {
   const posts = await getPosts();
@@ -16,7 +16,7 @@ export default async function PostPage({ params }: { params: { postId: string } 
     <div className="stackLg">
       <section className="card stackMd">
         <div className="stackSm">
-          <p className="eyebrow">포스트 상세</p>
+          <p className="eyebrow">글 상세</p>
           <h2>{post.title}</h2>
           <div className="rowBetween wrapGap">
             <p className="smallMuted">{formatDate(post.published_at)} · 댓글 {post.comment_count}개</p>
@@ -26,7 +26,9 @@ export default async function PostPage({ params }: { params: { postId: string } 
         <p className="lede">{post.summary_long || post.summary_short}</p>
         <div className="pillRow">
           {post.primary_topics.map((topic) => (
-            <TopicPill key={topic}>{topic}</TopicPill>
+            <TopicPill key={topic} href={`/topics?topic=${encodeURIComponent(topic)}`} title={formatTopicName(topic)}>
+              {formatTopicName(topic)}
+            </TopicPill>
           ))}
         </div>
       </section>
@@ -40,7 +42,7 @@ export default async function PostPage({ params }: { params: { postId: string } 
                 <div className="pillRow">
                   {claim.stance_target ? <TopicPill>{claim.stance_target}</TopicPill> : null}
                   {claim.stance_polarity ? <TopicPill>{formatPolarity(claim.stance_polarity)}</TopicPill> : null}
-                  {claim.confidence ? <TopicPill>confidence(신뢰도) {claim.confidence}</TopicPill> : null}
+                  {claim.confidence ? <TopicPill>신뢰도 {claim.confidence}</TopicPill> : null}
                 </div>
               </article>
             ))}
@@ -79,9 +81,9 @@ export default async function PostPage({ params }: { params: { postId: string } 
         <div className="stackSm">
           <p><strong>아카이브 월:</strong> {post.archive_month}</p>
           <p><strong>카테고리:</strong> {post.categories.join(', ') || '—'}</p>
-          <p><strong>보조 주제:</strong> {post.secondary_topics.join(', ') || '—'}</p>
-          <p><strong>시간 모드:</strong> {post.temporal_mode || '—'}</p>
-          <p><strong>다른 포스트로 이동:</strong> <PostLink postId={post.post_id} title="네비게이션으로 돌아가기" /></p>
+          <p><strong>보조 주제:</strong> {post.secondary_topics.map(formatTopicName).join(', ') || '—'}</p>
+          <p><strong>시간 관점:</strong> {post.temporal_mode || '—'}</p>
+          <p><strong>탐색:</strong> <Link href="/timeline" className="postLink">타임라인으로 이동</Link></p>
         </div>
       </SectionCard>
     </div>

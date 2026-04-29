@@ -6,6 +6,25 @@ import type { MonthSummary, Post, YearSummary } from '@/lib/types';
 
 const dataPath = (...parts: string[]) => path.join(process.cwd(), '..', 'data', ...parts);
 
+const topicCategoryOrder = [
+  'AI & Intelligence',
+  'Science Policy & Institutions',
+  'Quantum Computing',
+  'Civilization & Existential Risk'
+];
+
+const topicCategoryMap: Record<string, string> = {
+  'AI & Intelligence': 'AI & Intelligence',
+  'Philosophy & Metaphysics': 'AI & Intelligence',
+  'Science Policy & Institutions': 'Science Policy & Institutions',
+  'Politics & Society': 'Science Policy & Institutions',
+  'Personal / Community / Meta': 'Science Policy & Institutions',
+  'Quantum Computing': 'Quantum Computing',
+  'Complexity Theory': 'Quantum Computing',
+  'Physics Foundations': 'Quantum Computing',
+  'Civilization & Existential Risk': 'Civilization & Existential Risk'
+};
+
 const readJson = cache(async <T>(filePath: string): Promise<T> => {
   const raw = await readFile(filePath, 'utf8');
   return JSON.parse(raw) as T;
@@ -31,6 +50,53 @@ export const getYearSummaries = cache(async () => {
 export async function getPostById(postId: number) {
   const posts = await getPosts();
   return posts.find((post) => post.post_id === postId) ?? null;
+}
+
+export function postMatchesTopic(post: Post, topic: string) {
+  return [...post.primary_topics, ...post.secondary_topics].includes(topic);
+}
+
+export function formatTopicName(value: string) {
+  const labels: Record<string, string> = {
+    'Personal / Community / Meta': '개인 / 커뮤니티 / 메타',
+    'Science Policy & Institutions': '과학 정책과 제도',
+    'Physics Foundations': '물리학 기초',
+    'Politics & Society': '정치와 사회',
+    'Philosophy & Metaphysics': '철학과 Metaphysics',
+    'Civilization & Existential Risk': '문명과 Existential Risk'
+  };
+  return labels[value] ?? value;
+}
+
+export function formatStanceTarget(value: string) {
+  const labels: Record<string, string> = {
+    'useful quantum computing timeline': '유용한 Quantum Computing 전망',
+    'academic culture': '학계 문화',
+    'free speech / discourse norms': '표현의 자유 / 담론 규범',
+    'political tribalism': '정치적 진영주의',
+    'Israel / antisemitism / geopolitics': '이스라엘 / 반유대주의 / 지정학',
+    'AI existential risk': 'AI Existential Risk',
+    'AGI feasibility': 'AGI 실현 가능성',
+    'US science funding': '미국 과학 연구비',
+    'human specialness': '인간 고유성',
+    'simulation hypothesis': 'Simulation Hypothesis'
+  };
+  return labels[value] ?? value;
+}
+
+export async function getPostsByTopic(topic: string) {
+  const posts = await getPosts();
+  return posts.filter((post) => postMatchesTopic(post, topic));
+}
+
+export async function getPostsByYearAndTopic(year?: string, topic?: string) {
+  const posts = await getPosts();
+  return posts.filter((post) => {
+    const postYear = new Date(post.published_at).getFullYear().toString();
+    const yearMatches = year ? postYear === year : true;
+    const topicMatches = topic ? postMatchesTopic(post, topic) : true;
+    return yearMatches && topicMatches;
+  });
 }
 
 export async function getDashboardData() {
@@ -102,16 +168,49 @@ export async function getTopicMapData() {
     .sort((a, b) => b.count - a.count)
     .slice(0, 9);
 
-  return topTopics.map((topic) => ({
-    ...topic,
-    related: [...connections.entries()]
-      .filter(([key]) => key.includes(topic.name))
-      .map(([key, count]) => ({
-        name: key.split(':::').find((value) => value !== topic.name) ?? topic.name,
-        count
-      }))
-      .sort((a, b) => b.count - a.count)
-      .slice(0, 4)
+  const categoryTotals = new Map<string, number>();
+  const categories = new Map<string, Array<{
+    name: string;
+    count: number;
+    size: number;
+    x: number;
+    y: number;
+    related: Array<{ name: string; count: number }>;
+  }>>();
+
+  for (const category of topicCategoryOrder) {
+    categories.set(category, []);
+    categoryTotals.set(category, 0);
+  }
+
+  const maxCount = Math.max(...topTopics.map((topic) => topic.count), 1);
+  topTopics.forEach((topic) => {
+    const category = topicCategoryMap[topic.name] ?? 'Science Policy & Institutions';
+    const current = categories.get(category) ?? [];
+    const localIndex = current.length;
+    const point = {
+      ...topic,
+      size: Math.round(74 + (topic.count / maxCount) * 82),
+      x: [24, 66, 42, 78, 18][localIndex % 5],
+      y: [28, 38, 68, 72, 56][localIndex % 5],
+      related: [...connections.entries()]
+        .filter(([key]) => key.split(':::').includes(topic.name))
+        .map(([key, count]) => ({
+          name: key.split(':::').find((value) => value !== topic.name) ?? topic.name,
+          count
+        }))
+        .sort((a, b) => b.count - a.count)
+        .slice(0, 4)
+    };
+    current.push(point);
+    categories.set(category, current);
+    categoryTotals.set(category, (categoryTotals.get(category) ?? 0) + topic.count);
+  });
+
+  return topicCategoryOrder.map((name) => ({
+    name,
+    total: categoryTotals.get(name) ?? 0,
+    topics: categories.get(name) ?? []
   }));
 }
 
@@ -122,6 +221,7 @@ export async function getStanceExplorerData() {
     count: number;
     polarities: Map<string, number>;
     posts: Array<{ post_id: number; title: string; polarity: string | null; quote: string }>;
+    seenPostIds: Set<number>;
   }>();
 
   for (const post of posts) {
@@ -131,17 +231,19 @@ export async function getStanceExplorerData() {
         name: claim.stance_target,
         count: 0,
         polarities: new Map<string, number>(),
-        posts: []
+        posts: [],
+        seenPostIds: new Set<number>()
       };
       group.count += 1;
       group.polarities.set(claim.stance_polarity ?? 'unlabeled', (group.polarities.get(claim.stance_polarity ?? 'unlabeled') ?? 0) + 1);
-      if (group.posts.length < 6) {
+      if (!group.seenPostIds.has(post.post_id)) {
         group.posts.push({
           post_id: post.post_id,
           title: post.title,
           polarity: claim.stance_polarity,
           quote: claim.evidence_quotes[0] ?? claim.claim
         });
+        group.seenPostIds.add(post.post_id);
       }
       groups.set(claim.stance_target, group);
     }
@@ -159,13 +261,14 @@ export async function getStanceExplorerData() {
 
 export function formatPolarity(value: string | null) {
   const labels: Record<string, string> = {
-    support: 'support(지지)',
-    oppose: 'oppose(반대)',
-    skeptical: 'skeptical(회의적)',
-    conditional: 'conditional(조건부)'
+    support: '지지',
+    oppose: '반대',
+    skeptical: '회의적',
+    conditional: '조건부',
+    unlabeled: '미분류'
   };
-  if (!value) return 'unlabeled(미분류)';
-  return labels[value] ?? `${value}(설명-한글 필요)`;
+  if (!value) return '미분류';
+  return labels[value] ?? value;
 }
 
 export function formatMonth(month: string) {

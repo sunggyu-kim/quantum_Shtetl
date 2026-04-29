@@ -2,19 +2,19 @@ import Link from 'next/link';
 import type { ReactNode } from 'react';
 
 const nav = [
-  { href: '/', label: 'Dashboard' },
-  { href: '/timeline', label: 'Timeline' },
-  { href: '/topics', label: 'Topic Map' },
-  { href: '/stances', label: 'Stances' }
+  { href: '/', label: '대시보드' },
+  { href: '/timeline', label: '타임라인' },
+  { href: '/topics', label: '주제 맵' },
+  { href: '/stances', label: '입장 흐름' }
 ];
 
 export function Shell({ children }: { children: ReactNode }) {
   return (
     <div className="shell">
       <header className="topbar">
-        <div>
+        <div className="brandBlock">
           <p className="eyebrow">Scott Aaronson Idea Atlas</p>
-          <h1>Interactive map of 2020–2026 blog ideas</h1>
+          <h1>2020-2026 블로그 아이디어 지도</h1>
         </div>
         <nav>
           {nav.map((item) => (
